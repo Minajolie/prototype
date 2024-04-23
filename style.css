@@ -28,6 +28,9 @@ body{
     background-color: #000;
     color: rgb(157, 76, 12);
 }
+button{
+    display: none;
+}
 .white{
     color: #fff;
 }
@@ -124,6 +127,11 @@ body{
     background-color: rgb(244, 244, 244);
     padding: 30px;
 }
+.col p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
 .nix{
     text-align: center;
 }
@@ -132,26 +140,55 @@ body{
     transform: translateY(-60px);
 }
 @media screen and (max-width: 800px) {
+     body{
+       background-position: 0 50px;
+    } 
     .head{
-        display: block;
-        font-size: 15
-        px;
+        display: none;
     }
     .menu ul{
         display: block;
-       
     }
     .online{
         transform: translateX(-5px);
         margin: 10px 10px;
-
+    }
+    button i{
+        font-size: 20px;
+        transform: translateY(-5px);
+    }
+    button{
+        display: flex;
+        position: relative;
+        padding: 5px;
+        border: none;
+        background-color: #fff;
+    }
+    button:hover .six{
+        display: block;
+        position: absolute;
+        top: 10px;
+    }
+    .six{
+        width: 100px;
+        height: 150px;
+        background-color: #0000007a;
+        color: #fff;
+        transform: translate(-80px,20px);
+        padding: 10px;
+    }
+    /* .vertic{
+        transform: translate(-18px,20px);
+    } */
+    .contain{
+        padding: 62px;
     }
     .image{
         display: none;
     }
      .main ul{
-        display: block;
-        transform: translate(-50px, -10px);
+        display: none;
+        /* transform: translate(-50px, -10px); */
     }
     .main li{
         margin: 10px;
@@ -163,7 +200,7 @@ body{
         transform: translate(-25px,-4px);
     }
     .logo{
-        transform: translateY(-30px);
+        transform: translateY(20px);
     }
     .logo img{
         width: 20%;
@@ -172,6 +209,9 @@ body{
         width: 15%;
         transform: translate(-6px,-25px);
     }
+    .list{
+        transform: translateY(80px);
+    }
     .list h1{
         font-size: 30px;
     }
@@ -179,14 +219,14 @@ body{
         font-size: 10px;
     }
     .button p{
-        width: 30%;
-        transform: translateY(-15px);
+        width: 40%;
+        transform: translateY(80px);
     }
     .five{
-        transform: translateY(-80px);
+        transform: translateY(30px);
     }
     .nix img{
-        transform: translateY(-110px);
+        transform: translateY(-60px);
     }
 }
 
